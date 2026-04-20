@@ -1,0 +1,19 @@
+*{
+    padding :0;
+    margin : 0;
+    box-sizing: border-box;
+}
+
+:root
+{
+    --mainOne : #164098;
+    --mainTwo : #ece6f4;
+    --secondary : #73abe2;
+    --accent : #edff00;
+    --neutral : #9732d4;
+    --default : #19191a
+}
+
+body{
+    background: var(--mainTwo);
+}
