@@ -1,0 +1,58 @@
+.imageIcon{
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    border: 2.5px solid var(--accent);
+    cursor: pointer;
+    
+}
+
+.imageIcon:hover 
+{
+     border: 5px solid var(--accent);
+     
+}
+
+
+.link {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.hoverName
+{
+    visibility: hidden;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+
+}
+
+.link:hover .hoverName       {
+  visibility: visible;
+  background-color: var(--secondaryTrans);
+  bottom: 25%;
+}
+
+#circleLinks
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#recentPosts
+{
+    display: flex;
+    gap: 50px;
+}
+
+.mediaPage{
+    /* display: inline-grid; */
+    max-width: 500px;
+    gap: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    border: 5px solid var(--accent);
+    padding: 5px;
+}

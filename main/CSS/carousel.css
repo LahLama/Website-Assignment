@@ -1,0 +1,39 @@
+
+
+.descriptionArea{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "gameImage" "infoArea" ;
+    gap: 30px;
+    padding-top: 1rem;
+    max-width: 100%;
+    
+}
+
+.gameImage
+{
+    height: 250px;
+    width: 250px;
+    border-radius: 12px;
+}
+
+
+.presentCard 
+{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    
+}
+
+
+.infoArea
+{
+    background: var(--secondaryTrans) ;     
+    max-width: 500px;
+    padding: 1rem;
+    padding-top: 2%;
+    border-radius:  15px;
+}

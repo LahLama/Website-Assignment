@@ -1,0 +1,7 @@
+main
+{
+    display: grid;
+    grid-template-columns: 80% 10%;
+    grid-template-areas: "CarouselContainer" "TimelineContainer" ;
+    gap:35px;
+}

@@ -4,33 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="stylesheet" href="./CSS/index.css">
-    <script src="./JS/index.js" defer></script>
+    <link rel="stylesheet" href="/CSS/prefabs.css" type="text/css">
+    <link rel="stylesheet" href="/CSS/contact.css" type="text/css">
+
+<script src="/JS/contact/links.js" defer></script>
+<script src="/JS/contact/recentPosts.js" defer></script>
+
+    <script src="/JS/htmlHeader.js" defer></script>
+    <script src="/JS/htmlFooter.js" defer></script>
+
 </head>
 <body>
 
-    <header>
+    <header id="autoHTML">
 
     </header>
 
     <main>
 
-        <section id="circleLinks">
-            <div id="link">
-                <img src="../ASSETS/IMAGES/test1.png" height="126" width="126" alt="">
-                <p id="hoverName"> Name of Link </p>
+        <section id="circleLinks" class="classContainer">
+            <div class="link">
+                <a href="https://www.example.com" target="_blank">
+                <img src="../ASSETS/IMAGES/test1.png" class="imageIcon" height="126" width="126" alt="">
+                <p class="hoverName tooltip"> Name of Link </p>
+                </a>
             </div>
         </section>
 
-        <section id="recentPosts">
-            <div id="mediaPage">
-
-                <embed src="https://www.linkedin.com/feed/" style="width:500px; height: 300px;">
-                
-                <!-- This will no longer work in firefox by default -->
-                <iframe src="https://www.youtube.com" frameborder="0"></iframe>
-            </div>
+        <section id="recentPosts" class="classContainer center">
         </section>
+        
 
 
     </main>

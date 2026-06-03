@@ -4,64 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Games</title>
-    <link rel="stylesheet" href="./CSS/index.css">
-    <script src="./JS/index.js" defer></script>
+
+    
+    <link rel="stylesheet" href="/CSS/prefabs.css">
+    <link rel="stylesheet" href="/CSS/carousel.css">
+
+    <script src="/JS/htmlHeader.js" defer></script>
+    <script src="/JS/htmlFooter.js" defer></script>
+
+    <script src="/JS/CarouselBase.js"></script>
+
+    <script src="/JS/games/gamesCarousel.js" defer></script>
+    <script src="/JS/games/prototypeCarousel.js" defer></script>
+    <script src="/JS/games/gameJamCarousel.js" defer></script>
+
+  
 </head>
 <body>
 
-    <header>
+    <header id="autoHTML">
 
     </header>
 
     <main>
-
-        <section id="gamesContainer" class="presentCard">
-            <button id="backButton"> <-- </button>
-            <h3 title=""> Full Games </h3>
-            <div id="descriptionArea">
-                <img src="../ASSETS/IMAGES/test1.png" alt="image of the game">
-                <div id="infoArea">
-                    <h4> Game Title </h4>
-                    <h5> Role in the game</h5>
-                    <p> Short Description of the gamea and the struggles of making the game</p>
-                </div>
-            </div>
-                <button id="backButton"> --> </button>
+        <section id="gamesContainer" class="classContainer" >
+            <h3 title="" > Full Games </h3>
+            <section class="presentCard">
+                <button id="backButton_games" class="pressButton backButton"> <img src="/ASSETS/IMAGES/button_60x40.png"  alt="" /> </button>       
+                <div id="descriptionArea_games" class="descriptionArea"> </div>
+                <button id="forwardButton_games" class="pressButton forwardButton"><img src="/ASSETS/IMAGES/button_60x40.png" alt="" /></button>
+            </section>
         </section>
 
-
-        <section id="prototypesContainer" class="presentCard">
-            <button id="backButton"> <-- </button>
-                    <h3 title=""> Full Games </h3>
-                    <div id="descriptionArea">
-                        <img src="../ASSETS/IMAGES/test1.png" alt="image of the game">
-                        <div id="infoArea">
-                            <h4> Game Title </h4>
-                            <h5> Role in the game</h5>
-                            <p> Short Description of the gamea and the struggles of making the game</p>
-                        </div>
-                    </div>
-                    <button id="backButton"> --> </button>
+        <section id="prototypesContainer" class="classContainer">
+            <h3 title=""> Prototypes </h3>
+            <section class="presentCard">
+                <button id="backButton_prototypes" class="pressButton backButton"><img src="/ASSETS/IMAGES/button_60x40.png" alt="" /></button>
+                <div id="descriptionArea_prototypes" class="descriptionArea"></div>
+                <button id="forwardButton_prototypes" class="pressButton forwardButton"><img src="/ASSETS/IMAGES/button_60x40.png" alt="" /></button>
+            </section>
         </section>
 
-
-        <section id="gameJamsContainer" class="presentCard">
-            <button id="backButton"> <-- </button>
-                    <h3 title=""> Full Games </h3>
-                    <div id="descriptionArea">
-                        <img src="../ASSETS/IMAGES/test1.png" alt="image of the game">
-                        <div id="infoArea">
-                            <h4> Game Title </h4>
-                            <h5> Role in the game</h5>
-                            <p> Short Description of the gamea and the struggles of making the game</p>
-                        </div>
-                    </div>
-                    <button id="backButton"> --> </button>
+        <section id="gameJamsContainer" class="classContainer">
+            <h3 title=""> GameJams </h3>
+            <section class="presentCard">
+                <button id="backButton_gameJams" class="pressButton backButton"><img src="/ASSETS/IMAGES/button_60x40.png" alt="" /></button>
+                <div id="descriptionArea_gameJams" class="descriptionArea"></div>
+                <button id="forwardButton_gameJams" class="pressButton forwardButton"><img src="/ASSETS/IMAGES/button_60x40.png" alt="" /></button>
+            </section>
         </section>
 
-
-
-    </main>
+     </main>
     
     <footer>
         

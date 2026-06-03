@@ -3,17 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lama Rama Cafe</title>
-    <link rel="stylesheet" href="./CSS/index.css">
-    <script src="./JS/index.js" defer></script>
+    <title>Reviews</title>
+    
+    <link rel="stylesheet" href="../CSS/reviews.css">
+    <link rel="stylesheet" href="../CSS/prefabs.css">
+
+    <script src="/JS/reviews/reviews.js" defer></script>
+    <script src="/JS/reviews/analysis.js" defer></script>
+    <script src="../JS/htmlHeader.js" defer></script>
+    <script src="../JS/htmlFooter.js" defer></script>
+
 </head>
 <body>
 
-    <header>
+    <header id="autoHTML">
 
     </header>
 
     <main>
+        
+    <section id="ratingsContainer" class="classContainer">
+        <h3> Top Rated </h3>
+        <div class="cards" id="cards_ratings"  "></div>
+        <a href="#ratingsContainer" class="center" >
+            <button class="expandAllReviewsBtn" id="ratingsShowAll" > Show All Reviews </button>
+        </a>
+    </section>
+
+    <section id="analysisContainer" class="classContainer">
+        <h3> Top Analysis </h3>
+        <div class="cards" id="cards_analysis" "></div>
+            <a href=" #analysisContainer" class="center">
+            <button class="expandAllReviewsBtn" id="analysisShowAll"> Show All Reviews </button>
+            </a>
+    </section>
 
     </main>
     

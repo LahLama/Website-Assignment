@@ -4,44 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
-    <link rel="stylesheet" href="./CSS/index.css">
-    <script src="./JS/index.js" defer></script>
+    
+    <link rel="stylesheet" href="../CSS/prefabs.css">
+    <link rel="stylesheet" href="../CSS/carousel.css">
+    <link rel="stylesheet" href="../CSS/projects.css">
+    
+    <script src="../JS/CarouselBase.js" defer></script>
+    <script src="../JS/projects/codedCarousel.js" defer></script>
+    <script src="../JS/projects/practicalsCarousel.js" defer></script>
+
+    <script src="../JS/htmlHeader.js" defer></script>
+    <script src="../JS/htmlFooter.js" defer></script>
+
 </head>
 <body>
 
-    <header>
+    <header id="autoHTML">
 
     </header>
-
     <main>
-    <section id="CodeContainer" class="presentCard">
-        <button id="backButton"> <-- </button>
+        <section id="CarouselContainer">
+            <section id="codedContainer" class="classContainer xen">
                 <h3 title=""> Coded Projects </h3>
-                <div id="descriptionArea">
-                    <img src="../ASSETS/IMAGES/test1.png" alt="image of the game">
-                    <div id="infoArea">
-                        <h4> Game Title </h4>
-                        <h5> Role in the game</h5>
-                        <p> Short Description of the gamea and the struggles of making the game</p>
-                    </div>
-                </div>
-                <button id="backButton"> --> </button>
-    </section>
-    <section id="PracticalContainer" class="presentCard">
-        <button id="backButton"> <-- </button>
+                <section class="presentCard">
+                    <button id="backButton_coded" class="pressButton backButton"> <img src="/ASSETS/IMAGES/button_60x40.png" alt="" /> </button>
+                    <div id="descriptionArea_coded" class=" descriptionArea"> </div>
+                    <button id="forwardButton_coded" class="pressButton forwardButton"><img src="/ASSETS/IMAGES/button_60x40.png" alt="" /></button>
+                </section>
+            </section>
+        
+            <section id="practicalsContainer" class="classContainer">
                 <h3 title=""> Practical Projects </h3>
-                <div id="descriptionArea">
-                    <img src="../ASSETS/IMAGES/test1.png" alt="image of the game">
-                    <div id="infoArea">
-                        <h4> Game Title </h4>
-                        <h5> Role in the game</h5>
-                        <p> Short Description of the gamea and the struggles of making the game</p>
-                    </div>
-                </div>
-                <button id="backButton"> --> </button>
-    </section>
+                <section class="presentCard">
+                    <button id="backButton_practicals" class="pressButton backButton"><img src="/ASSETS/IMAGES/button_60x40.png"
+                            alt="" /></button>
+                    <div id="descriptionArea_practicals" class="descriptionArea"></div>
+                    <button id="forwardButton_practicals" class="pressButton forwardButton"><img
+                            src="/ASSETS/IMAGES/button_60x40.png" alt="" /></button>
+                </section>
+            </section>
+        </section>
 
+        <section id="TimelineContainer" class="timelineCard classContainer">
+            <h3 title=""> Timeline </h3>
+            <div class="infoArea center">
+                <p>Short description of the timeline including roles, times etc</p>
+            </div>
+        </section>
+    
     </main>
+
+
     
     <footer>
         
