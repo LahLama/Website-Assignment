@@ -6,17 +6,41 @@ function createCarousel(list, selectors) {
   const card_ = document.querySelector(selectors.card);
 
   function render(index) {
+
+    prevButton_.disabled = true;
+    nextButton_.disabled = true;
+
+    if (!prevButton_ || !nextButton_ || !card_) {
+    console.error("Carousel: missing DOM element", selectors);
+    return;
+}
+
+if (!list || list.length === 0) return;
     const item_ = list[index];
 
     card_.innerHTML = `
     <img class="gameImage" src="${item_.img}">
-    <div class="classContainer infoArea  " >
-        <h4> ${item_.gameTitle} </h4>
+    <div class="infoArea" >
+        <h2> ${item_.gameTitle} </h2>
         <h5> ${item_.role}</h5>
         <p> ${item_.description}</p>
-        <a href="${item_.link} target="_blank">See it here!</a>
+        
     </div>
-    `;
+    `;    
+
+    if (item_.link != "")
+    {
+      const newRedirect = document.createElement("a");
+      newRedirect.setAttribute("href", item_.link);
+      newRedirect.setAttribute("target", "_blank")
+      newRedirect.textContent = "View it here!"
+
+      card_.querySelector(".infoArea").append(newRedirect);
+    }
+
+      prevButton_.disabled = false;
+      nextButton_.disabled = false;
+
   }
 
   nextButton_.addEventListener("click", () => {
@@ -30,4 +54,6 @@ function createCarousel(list, selectors) {
   });
 
   render(currentIndex_);
+
+
 }

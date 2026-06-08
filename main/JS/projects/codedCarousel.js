@@ -1,44 +1,20 @@
 const codedProjects = [
   {
     id: 1,
-    img: "/ASSETS/IMAGES/test1.png",
+    img: "/ASSETS/IMAGES/projects/coded/morabaraba.png",
     gameTitle: "TaskFlow",
-    role: "Full Stack Developer",
-    description: "Built a kanban-style project management web app with real-time updates using React, Node.js, and WebSockets.",
-    link: "https://www.example.com"
+    role: "Multiplayer Developer",
+    description: "Built a Digitized version of morabaraba. Includes playing against a player and against an AI. Various board types are also included.",
+    link: ""
   },
   {
     id: 2,
-    img: "/ASSETS/IMAGES/test1.png",
-    gameTitle: "DevMetrics Dashboard",
-    role: "Frontend Developer",
-    description: "Developed an analytics dashboard that visualises GitHub repository activity and pull request trends using REST APIs.",
-    link: "https://www.example.com"
+    img: "/ASSETS/IMAGES/projects/coded/1024.png",
+    gameTitle: "1024 in C++",
+    role: "Co-Developer",
+    description: "Developed a version of 1024 in C++ in a team of two for a Software Development Course",
+    link: ""
   },
-  {
-    id: 3,
-    img: "/ASSETS/IMAGES/test1.png",
-    gameTitle: "SecureVault API",
-    role: "Backend Developer",
-    description: "Designed a RESTful API with JWT authentication, role-based access control, and encrypted credential storage.",
-    link: "https://www.example.com"
-  },
-  {
-    id: 4,
-    img: "/ASSETS/IMAGES/test1.png",
-    gameTitle: "Pathfinder CLI",
-    role: "Software Engineer",
-    description: "Created a command-line tool for visualising and comparing pathfinding algorithms across custom grid inputs.",
-    link: "https://www.example.com"
-  },
-  {
-    id: 5,
-    img: "/ASSETS/IMAGES/test1.png",
-    gameTitle: "BudgetBuddy",
-    role: "Mobile Developer",
-    description: "Built a cross-platform budgeting app in Flutter with local data persistence and monthly spending breakdowns.",
-    link: "https://www.example.com"
-  }
 ];
 
 //Follows prev,next, card name

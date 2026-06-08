@@ -49,8 +49,8 @@ function renderReview(index) {
   card.innerHTML =`
   <img src="${review.img}" id="person-img" alt="${review.name}">
   <div class="testimonialInfo">
-    <h3>${review.name}</h3>
-    <h4>${review.job}</h4>
+    <h2>${review.name}</h2>
+    <h2>${review.job}</h2>
     <p>${review.text}</p>
   </div>`;
 

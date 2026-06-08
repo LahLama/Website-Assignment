@@ -35,7 +35,7 @@ skills = [
 ]
 
     // <div id="skills">
-    //     <h3>Skills</h3>
+    //     <h2>Skills</h2>
     //     <div id="skillsContainer" class="classContainer">
     //         <div id="skill">
     //             <div id="bubbles"> 

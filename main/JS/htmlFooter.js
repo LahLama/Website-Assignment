@@ -24,7 +24,18 @@ pages = [
 const footer = document.querySelector("footer")
 
 function renderSitemap()
-{
+{   
+    footer.innerHTML = `        
+    <section id="sitemap" >
+            <h1>Sitemap</h1>
+    </section>
+    <section id="contact">
+        <h1>Contact</h1>
+        <div id="contactForm" class="center">
+            <a id="email" href="mailto:jamesihlenfeldt@proton.me"> EMAIL ME HERE </a>    
+        </div>
+    </section>`
+
     const sitemapContainer = document.createElement("ol")
     sitemapContainer.textContent = "Sitemap"
     sitemapContainer.classList.add("sitemapContainer")
@@ -34,8 +45,8 @@ function renderSitemap()
         sitemapContainer.append(newSiteItem)
 
     });
-    
-    footer.append(sitemapContainer);
+    // footer.classList.add("classContainer")
+    document.querySelector("#sitemap").append(sitemapContainer);
 }
 
 function renderSitemapItems(page)

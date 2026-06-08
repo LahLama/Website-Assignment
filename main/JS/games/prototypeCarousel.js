@@ -1,43 +1,19 @@
 const prototypes = [
   {
     id: 1,
-    img: "/ASSETS/IMAGES/test1.png",
-    gameTitle: "Gravshift",
-    role: "Gameplay Programmer",
-    description: "Prototyped a gravity-flipping platformer mechanic with momentum preservation and dynamic obstacle generation.",
-    link: "https://www.example.com"
+    img: "/ASSETS/IMAGES/games/prototypes/colourSwitch.png",
+    gameTitle: "Colour Switch",
+    role: "Main Developer",
+    description: "A simple colour switching prototype made in just 24 hours.   Not meant to be a full game, just a little proof of concept :D  if you do decide to check it out, let me know how you found it :D",
+    link: "https://lahlama.itch.io/colour-switch"
   },
   {
     id: 2,
-    img: "/ASSETS/IMAGES/test1.png",
-    gameTitle: "Spore Tactics",
-    role: "Systems Designer",
-    description: "Explored turn-based combat with organic unit growth systems and terrain-based ability modifiers.",
-    link: "https://www.example.com"
-  },
-  {
-    id: 3,
-    img: "/ASSETS/IMAGES/test1.png",
-    gameTitle: "Mirrorgate",
-    role: "Gameplay Programmer",
-    description: "Built a proof-of-concept for a dual-reality puzzle mechanic where player actions mirror across two dimensions.",
-    link: "https://www.example.com"
-  },
-  {
-    id: 4,
-    img: "/ASSETS/IMAGES/test1.png",
-    gameTitle: "Thornwatch",
-    role: "Level Designer",
-    description: "Prototyped a top-down stealth layout with dynamic guard patrol paths and destructible cover objects.",
-    link: "https://www.example.com"
-  },
-  {
-    id: 5,
-    img: "/ASSETS/IMAGES/test1.png",
-    gameTitle: "Velocity Rift",
-    role: "Technical Designer",
-    description: "Tested a time-dilation mechanic for a racing game where slowing time affects vehicle handling and track hazards.",
-    link: "https://www.example.com"
+    img: "/ASSETS/IMAGES/games/prototypes/braaiSimulator.png",
+    gameTitle: "Braai Simulator",
+    role: "Main Designer and Developer",
+    description: "Take charge of a South African Braai Restaurant. Manage Customer's orders , anger and moods!  Be careful to  not burn any items and enjoy the three rounds (Use WitsPrototypes as the password)",
+    link: "https://lahlama.itch.io/braai-simulator"
   }
 ];
 

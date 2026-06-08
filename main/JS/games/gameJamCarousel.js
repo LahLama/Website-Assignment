@@ -1,43 +1,20 @@
 const gameJams = [
   {
+    // (Use the password WitsPrototypes to unlock the game!)
     id: 1,
-    img: "/ASSETS/IMAGES/test1.png",
-    gameTitle: "Hollow Signal",
-    role: "Gameplay Programmer",
-    description: "Implemented core interaction systems and event-driven triggers for a puzzle-platformer built in 48 hours.",
-    link: "https://www.example.com"
+    img: "/ASSETS/IMAGES/games/gameJams/fishRescue.png",
+    gameTitle: "Fish Rescue",
+    role: "Primary Developer and Designer",
+    description: "You are in charge of a rescue center on the banks of a river. Fish was ashore needing your help.   You are tasked to save these fish and rehabilitate them.   Feed Them. Make them Comfortable. Give them love. Then release them! (Use the password WitsPrototypes to unlock the game!)",
+    link: "https://lahlama.itch.io/fish-rescue"
   },
   {
     id: 2,
-    img: "/ASSETS/IMAGES/test1.png",
-    gameTitle: "Ashborne",
-    role: "Narrative Designer",
-    description: "Wrote branching dialogue and designed choice-consequence systems for a post-apocalyptic survival game.",
-    link: "https://www.example.com"
-  },
-  {
-    id: 3,
-    img: "/ASSETS/IMAGES/test1.png",
-    gameTitle: "Tidebreaker",
-    role: "UI/UX Designer",
-    description: "Designed accessible menus, health indicators, and feedback systems for a fast-paced naval roguelike.",
-    link: "https://www.example.com"
-  },
-  {
-    id: 4,
-    img: "/ASSETS/IMAGES/test1.png",
-    gameTitle: "Wren & the Void",
-    role: "Level Designer",
-    description: "Built hand-crafted levels with guided exploration, hidden areas, and escalating difficulty across three biomes.",
-    link: "https://www.example.com"
-  },
-  {
-    id: 5,
-    img: "/ASSETS/IMAGES/test1.png",
-    gameTitle: "Runemark",
-    role: "Technical Artist",
-    description: "Created stylised VFX and optimised sprite atlases to maintain consistent frame rates on lower-end hardware.",
-    link: "https://www.example.com"
+    img: "/ASSETS/IMAGES/games/gameJams/pacMan.png",
+    gameTitle: "Pacman Recreation",
+    role: "Primary Developer and Designer",
+    description: "An attempt at recreating the classic maze arcade game Pac-Man! BUT with a twist of a new repellent ghost!.  (Use the password WitsPrototypes to unlock the game!)",
+    link: "https://lahlama.itch.io/pacman-recreation"
   }
 ];
 

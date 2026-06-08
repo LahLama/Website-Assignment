@@ -2,43 +2,19 @@
 const games = [
   {
     id: 1,
-    img: "/ASSETS/IMAGES/test1.png",
-    gameTitle: "Nebula Drift",
-    role: "Gameplay Programmer",
-    description: "Built core movement systems and handled player controls for space navigation mechanics.",
-    link: "https://www.example.com"
+    img: "/ASSETS/IMAGES/games/fullGames/theNun.png",
+    gameTitle: "The Nun",
+    role: "Core Coder",
+    description: "Made for Wits Digital Arts 2nd Semester Project. We  had the experience to make our first 3d game with our own hand crafted objects. The Nun follow your character as they are compelled to search for their friend that has gone missing. But to find this friend you will need to unlock a series of rooms! Do enjoy. Although this our final project there are areas for improvement. ",
+    link: "https://lahlama.itch.io/the-nun"
   },
   {
     id: 2,
-    img: "/ASSETS/IMAGES/test1.png",
-    gameTitle: "Ironbound Arena",
-    role: "UI Designer",
-    description: "Designed and implemented in-game menus and HUD elements for competitive match clarity.",
-    link: "https://www.example.com"
-  },
-  {
-    id: 3,
-    img: "/ASSETS/IMAGES/test1.png",
-    gameTitle: "Echo Valley",
-    role: "Level Designer",
-    description: "Created exploration-focused levels with environmental storytelling and pacing flow.",
-    link: "https://www.example.com"
-  },
-  {
-    id: 4,
-    img: "/ASSETS/IMAGES/test1.png",
-    gameTitle: "Pixel Heist",
-    role: "Systems Designer",
-    description: "Developed stealth mechanics and enemy behaviour logic for mission-based gameplay.",
-    link: "https://www.example.com"
-  },
-  {
-    id: 5,
-    img: "/ASSETS/IMAGES/test1.png",
-    gameTitle: "Frostline Protocol",
-    role: "Technical Artist",
-    description: "Optimised shaders and visual effects for performance across multiple platforms.",
-    link: "https://www.example.com"
+    img: "/ASSETS/IMAGES/games/fullGames/evilEnigma.png",
+    gameTitle: "Evil Engima",
+    role: "Gameplay and Puzzle Developer",
+    description: "This was a university project done for the first semester.   You accidentally created a sentient AI and now must try and destroy it. You WILL lose. You WILL learn. You WILL be taunted at.  But WILL you succeed?",
+    link: "https://lahlama.itch.io/evil-enigma"
   }
 ];
 

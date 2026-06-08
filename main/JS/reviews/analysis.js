@@ -2,39 +2,29 @@
 const gameAnalysis = [
   {
     id: 1,
-    img: "/ASSETS/IMAGES/test1.png",
-    gameTitle: "Hollow Knight",
-    description: "An exploration of how environmental silence and sparse UI design create a sense of isolation that reinforces the game's themes of loss and perseverance.",
-    link: "https://www.example.com"
+    // https://minecraft.wiki/index.php?curid=174898
+    img: "/ASSETS/IMAGES/reviews/analysis/minecraft.jpg",
+    gameTitle: "Minecraft",
+    description: "An analysis of how Minecraft guides the player through tutorialization through ingame structures and events.Minecraft uses a digetic tutorial system...",
+    link: "https://drive.google.com/file/d/1JuItGgKWlYjTOXxsrw3isMycrHnLOgM3/view?usp=drive_link"
   },
   {
     id: 2,
-    img: "/ASSETS/IMAGES/test1.png",
-    gameTitle: "Celeste",
-    description: "A breakdown of how Celeste uses its assist mode and difficulty curve as a mechanical metaphor for mental health and self-acceptance.",
-    link: "https://www.example.com"
+    // https://www.mobygames.com/game/234101/marvel-rivals/cover/group-407559/cover-973165/
+    img: "/ASSETS/IMAGES/reviews/analysis/marvelRivals.jpg",
+    gameTitle: "Marvel Rivals",
+    description: "A breakdown of how Marvel Rivals as branched from the generic superhero shooter genre and how it's stylistic choices were implemented...",
+    link: "https://drive.google.com/file/d/1zjRFkqj15WFmcw3lursSqREOBHmZhsgG/view?usp=drive_link"
   },
   {
     id: 3,
-    img: "/ASSETS/IMAGES/test1.png",
-    gameTitle: "Disco Elysium",
-    description: "An analysis of how skill-based dialogue systems replace traditional combat to reframe player agency around identity and ideology rather than power.",
-    link: "https://www.example.com"
+    //https://en.uesp.net/wiki/File:SR-cover-Skyrim_Box_Art.jpg
+    img: "/ASSETS/IMAGES/reviews/analysis/skyrim.jpg  ",
+    gameTitle: "Minecraft and Skyrim",
+    description: "A comparision of how two games from different generes, being Openworld RPG and the other, Openworld sandbox relate with music and audio design...",
+    link: "https://drive.google.com/file/d/12er1YlNTSF2jFcnerl1vL4YvD-dR3ajT/view?usp=drive_link"
   },
-  {
-    id: 4,
-    img: "/ASSETS/IMAGES/test1.png",
-    gameTitle: "Outer Wilds",
-    description: "A look at how knowledge rather than ability gates progression, and how that design choice shifts the emotional core from challenge to discovery.",
-    link: "https://www.example.com"
-  },
-  {
-    id: 5,
-    img: "/ASSETS/IMAGES/test1.png",
-    gameTitle: "Hades",
-    description: "An examination of how narrative repetition is woven into the roguelike loop, using failure as a storytelling device rather than a setback.",
-    link: "https://www.example.com"
-  }
+
 ];
 
 const showAnalyisButton = document.querySelector("#analysisShowAll");
@@ -81,7 +71,7 @@ function renderAnalysis(review) {
     card.innerHTML =`
    <img src="${review.img}" alt="image of the game" class="reviewImage">
     <div class="center reviewInfo ">
-        <h4> ${review.gameTitle} </h4>
+        <h2> ${review.gameTitle} </h2>
         <p> ${review.description}</p>
         <a href=${review.link}>  
             <button  class="expandReviewBtn center">Open Review </button>

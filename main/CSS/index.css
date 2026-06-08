@@ -1,114 +1,184 @@
-img
-{
-    width: 150px;
-    height: 150px;
-}
-
-h3{
+h2 {
     color: var(--mainTwo);
 }
 
-section
-{
-    /* margin-bottom: 1rem; */
-    
-}
-
-#heroContainer
-{
-   background-image: url("../ASSETS/IMAGES/test1.png");
-   background-size: cover;
-   height: 256px;
+/* Hero */
+#heroContainer {
+    background-image: url("../ASSETS/IMAGES/test1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 512px;
 }
 
 /* About Me */
-#aboutMeImg
-{
-    border-radius: 75px;
+#aboutMeImg {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
 }
 
+#AboutMe_SkillsContainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
 
 /* Skills */
-#skills
-{
-    /* background: var(--mainOne); */
-}
-
-#skillsContainer
-{
+#skillsContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-#AboutMe_SkillsContainer
-{
-    display: grid;
-    grid-template-columns: 30% 70%;
-    grid-template-areas: "aboutMe" "skills" "skills";
-    
+.skill {
+    display: flex;
+    gap: 15px;
 }
 
-
-/* Tesitonials*/
-#Testimonials
-{
-    display: inline-grid;
-    align-content: center;
-    justify-content: center;
-    width: 100%;
+.skillCircle {
+    height: 25px;
+    width: 25px;
+    background-color: var(--accent);
+    border-radius: 50%;
+    border: var(--default) 1px solid;
+    display: inline-block;
 }
-#testimonialCard
-{
-    width: 100%;
 
-    align-content: center;
-    justify-content: center;
+.skillCircleDeactivate {
+    height: 25px;
+    width: 25px;
+    background-color: var(--secondary);
+    border-radius: 50%;
+    border: var(--default) 1px solid;
+    display: inline-block;
+}
+
+/* Testimonials */
+#testimonialCard {
     background: var(--secondary);
     display: flex;
-    flex-wrap: wrap;
-    padding: 2rem;
+    padding: 25px;
+    max-width: 500px;
+
+    max-height: 200px;
+;
+    border-radius: 12px;
+    justify-self: center;
+    overflow: scroll;
 }
 
-.testimonialInfo{
-    width: 100%;
+.testimonialInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1;
 }
 
-#person-img
-{
-    
+#TestimonalAndButtons {
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+}
+
+#person-img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    z-index: 1;
 }
 
-#FAQandImage
-{
+/* FAQ */
+#FAQandImage {
     display: grid;
-    grid-template-columns:  70% 30%;
-    grid-template-areas: "FAQ" "WhitespaceImage" ;
+    grid-template-columns: 70% 30%;
 }
 
 .faq_q {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 12px;
-  padding: 7px 20px;
-  border-bottom: 4px solid var(--mainTwo);
-  cursor: pointer;
-  transition: background 0.15s;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    padding: 7px 20px;
+    border-bottom: 4px solid var(--mainTwo);
+    cursor: pointer;
+    transition: background 0.15s;
 }
 
 .faq_answer {
-  width: 100%;          
-
-  padding: 0 0 4px 52px; 
-  max-height: 200px;
-  overflow: hidden;
+    width: 100%;
+    padding: 0 0 4px 52px;
+    max-height: 200px;
+    overflow: hidden;
 }
 
-.button-container
-{
+.button-container {
     display: flex;
     justify-content: center;
+}
+
+/* Tablet + Phone */
+@media screen and (min-width: 0px) and (max-width: 768px) {   
+    .whitespaceImage {
+        display: none;
+    }
+
+    #FAQandImage {
+        display: flex;
+    }
+
+    #AboutMe_SkillsContainer {
+        grid-template-columns: 1fr;
+    }
+
+    #aboutMeImg {
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    #skillsContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    main {
+        background-color: lightgreen;
+    }
+
+    #AboutMe_SkillsContainer {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Phone */
+@media screen and (min-width: 0px) and (max-width: 480px) {
+    main {
+        background-color: lightblue;
+    }
+
+    #heroContainer
+    {display: none;}
+
+    .skill {
+        display: block;
+    }
+
+     #TestimonalAndButtons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    #testimonialCard {
+        order: 0;
+        flex: 0 0 100%; 
+    }
+
+    #testimonal_backButton { order: 1; }
+    #testimonal_forwardButton { order: 1; }
 }
